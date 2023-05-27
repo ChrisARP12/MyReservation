@@ -11,4 +11,9 @@
     <string name="textoCofirmarContraseña">Vuelva a introducir su contraseña</string>
     <string name="BotonRegresar">Volver</string>
     <string name="Prueba">Hola como estas</string>
+    <string name="textoNombre">Nombre</string>
+    <string name="textoApellido">Apellido</string>
+    <string name="textoCorreo">Correo</string>
+    <string name="textoRegistro">Hola, registrate para poder acceder</string>
+    <string name="textoVerificar">Verificar Contraseña</string>
 </resources>

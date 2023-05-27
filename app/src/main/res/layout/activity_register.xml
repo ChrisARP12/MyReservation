@@ -23,91 +23,13 @@
         android:id="@+id/txt_bienvenida"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:text="@string/textoQuieroAdmin"
+        android:text="@string/textoRegistro"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.153" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout2"
-        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
-        android:layout_width="404dp"
-        android:layout_height="102dp"
-        app:boxBackgroundMode="outline"
-        app:boxCornerRadiusBottomStart="10dp"
-        app:boxCornerRadiusTopEnd="10dp"
-        app:counterMaxLength="15"
-        app:endIconMode="password_toggle"
-        app:helperText="Caracteres Maximo : 15"
-        app:helperTextEnabled="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-        app:layout_constraintVertical_bias="0.002">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txt_contrasena"
-            android:layout_width="match_parent"
-            android:layout_height="92dp"
-            android:hint="@string/textoContraseña" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout3"
-        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
-        android:layout_width="404dp"
-        android:layout_height="102dp"
-        app:boxBackgroundMode="outline"
-        app:boxCornerRadiusBottomStart="10dp"
-        app:boxCornerRadiusTopEnd="10dp"
-        app:counterMaxLength="15"
-        app:endIconMode="password_toggle"
-        app:helperText="Caracteres Maximo : 15"
-        app:helperTextEnabled="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-        app:layout_constraintVertical_bias="0.306">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txt_confirmaContrasena"
-            android:layout_width="match_parent"
-            android:layout_height="92dp"
-            android:hint="@string/textoCofirmarContraseña" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
-        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
-        android:layout_width="404dp"
-        android:layout_height="102dp"
-        app:boxBackgroundMode="outline"
-        app:boxCornerRadiusBottomStart="10dp"
-        app:boxCornerRadiusTopEnd="10dp"
-        app:endIconMode="clear_text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.303"
-        app:startIconDrawable="@drawable/ic_user">
-
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txt_usuario"
-            android:layout_width="match_parent"
-            android:layout_height="92dp"
-            android:hint="@string/textoUsuario" />
-
-    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btn_registrar"
@@ -118,7 +40,111 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.761" />
+        app:layout_constraintVertical_bias="0.857" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="385dp"
+        android:layout_height="305dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.566">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/textoNombre"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:endIconMode="clear_text"
+                app:errorEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/textoNombre" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:endIconMode="clear_text"
+                android:hint="@string/textoUsuario">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/textoUsuario" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_correo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:endIconMode="clear_text"
+                android:hint="@string/textoCorreo">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/textoCorreo" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_contraseña"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:counterMaxLength="15"
+                app:endIconMode="password_toggle"
+                app:helperText="Caracteres Maximo : 15"
+                app:helperTextEnabled="true"
+                android:hint="@string/textoContraseña">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/textoContraseña" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_confirmarContraseña"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:counterMaxLength="15"
+                app:endIconMode="password_toggle"
+                app:helperText="Caracteres Maximo : 15"
+                app:helperTextEnabled="true"
+                android:hint="@string/textoVerificar">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/textoCofirmarContraseña" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

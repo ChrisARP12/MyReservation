@@ -2,7 +2,9 @@ package com.example.myreservation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,6 +33,16 @@ public class MainActivity extends AppCompatActivity {
         String dato  = et_usuario.getText().toString();
         String usuario  = et_usuario.getText().toString();
         String contraseña  = et_contrasena.getText().toString();
+
+        recuperar();
+        /*if (getIntent().getStringExtra("correo") != null) {
+            String correo = getIntent().getStringExtra("correo");
+            String contrasenia = getIntent().getStringExtra("contrasena");
+
+            et_usuario.setText(correo);
+            et_contrasena.setText(contrasenia);
+            guardar();
+        }*/
 
         btn_ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,5 +77,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(IrRegistro);
             }
         });
+    }
+
+    public void recuperar(){
+        SharedPreferences prefe = getSharedPreferences("datos", Context.MODE_PRIVATE);
+        String s1 = prefe.getString("correo","");
+        et_usuario.setText(s1);
+    }
+
+    public void guardar() {
+        SharedPreferences preferencias = getSharedPreferences("datos", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor= preferencias.edit();
+        editor.putString("Usuario", et_usuario.getText().toString());
+        editor.commit();
     }
 }
