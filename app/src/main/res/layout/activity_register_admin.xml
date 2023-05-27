@@ -6,19 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_ingresar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/BotonIngresar"
+    <ImageView
+        android:id="@+id/btn_regresar"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:contentDescription="@string/BotonRegresar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.705" />
+        app:layout_constraintVertical_bias="0.041"
+        app:srcCompat="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/txt_bienvenida"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:text="@string/textoQuieroAdmin"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.153" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
         style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
         android:layout_width="404dp"
         android:layout_height="102dp"
@@ -31,16 +45,42 @@
         app:helperTextEnabled="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.002">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txt_contrasena"
             android:layout_width="match_parent"
             android:layout_height="92dp"
             android:hint="@string/textoContraseña" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+        android:layout_width="404dp"
+        android:layout_height="102dp"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:counterMaxLength="15"
+        app:endIconMode="password_toggle"
+        app:helperText="Caracteres Maximo : 15"
+        app:helperTextEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.306">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_confirmaContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:hint="@string/textoCofirmarContraseña" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -54,10 +94,10 @@
         app:endIconMode="clear_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.305"
+        app:layout_constraintVertical_bias="0.303"
         app:startIconDrawable="@drawable/ic_user">
 
 
@@ -66,6 +106,7 @@
             android:layout_width="match_parent"
             android:layout_height="92dp"
             android:hint="@string/textoUsuario" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -75,32 +116,9 @@
         android:text="@string/BotonRegistrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.727"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.705" />
+        app:layout_constraintVertical_bias="0.761" />
 
-    <Button
-        android:id="@+id/btn_quieroAdmin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/BotonSoyAdmin"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.828" />
-
-    <TextView
-        android:id="@+id/txt_bienvenida"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:text="@string/textoBienvenida"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.159" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

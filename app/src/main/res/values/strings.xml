@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">My Reservation</string>
+    <string name="BotonIngresar">Ingresar</string>
+    <string name="BotonRegistrar">Registrarse</string>
+    <string name="BotonQuisieraAdmin">Quiero ser Admin</string>
+    <string name="BotonSoyAdmin">Soy Admin</string>
+    <string name="textoBienvenida">Hola, Bienvenido a reservation</string>
+    <string name="textoQuieroAdmin">Hola, Quieres usar nuestra app como administrador?</string>
+    <string name="textoUsuario">Usuario</string>
+    <string name="textoContraseña">Contraseña</string>
+    <string name="textoCofirmarContraseña">Vuelva a introducir su contraseña</string>
+    <string name="BotonRegresar">Volver</string>
+    <string name="Prueba">Hola como estas</string>
 </resources>
