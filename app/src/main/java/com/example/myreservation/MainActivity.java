@@ -10,13 +10,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class MainActivity extends AppCompatActivity {
     Button btn_ingresar, btn_registrar, btn_soyAdmin;
-    TextInputEditText et_usuario, et_contrasena;
-    public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
+    TextInputLayout et_usuario, et_contrasena;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +28,6 @@ public class MainActivity extends AppCompatActivity {
         et_usuario =  findViewById(R.id.txt_usuario);
         et_contrasena = findViewById(R.id.txt_contrasena);
 
-        String dato  = et_usuario.getText().toString();
-        String usuario  = et_usuario.getText().toString();
-        String contraseña  = et_contrasena.getText().toString();
 
         recuperar();
         /*if (getIntent().getStringExtra("correo") != null) {
@@ -48,9 +43,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent IrVistaPrincipal = new Intent(MainActivity.this, PrincipalView.class);
-                IrVistaPrincipal.putExtra(EXTRA_MESSAGE,dato);
+                IrVistaPrincipal.putExtra("Dato",et_usuario.getEditText().getText().toString());
+                String usuario  = et_usuario.getEditText().getText().toString();
+                String contraseña  = et_contrasena.getEditText().getText().toString();
+
                 if(!usuario.isEmpty()){
                     if (!contraseña.isEmpty()){
+                        guardar();
                         startActivity(IrVistaPrincipal);
                     }else {
                         Toast.makeText(MainActivity.this, "Contraseña Vacia", Toast.LENGTH_SHORT).show();
@@ -81,14 +80,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void recuperar(){
         SharedPreferences prefe = getSharedPreferences("datos", Context.MODE_PRIVATE);
-        String s1 = prefe.getString("correo","");
-        et_usuario.setText(s1);
+        String s1 = prefe.getString("Usuario","");
+        et_usuario.getEditText().setText(s1);
     }
 
     public void guardar() {
         SharedPreferences preferencias = getSharedPreferences("datos", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor= preferencias.edit();
-        editor.putString("Usuario", et_usuario.getText().toString());
+        editor.putString("Usuario", et_usuario.getEditText().getText().toString());
         editor.commit();
     }
 }

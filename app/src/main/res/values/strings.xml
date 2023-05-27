@@ -4,7 +4,7 @@
     <string name="BotonRegistrar">Registrarse</string>
     <string name="BotonQuisieraAdmin">Quiero ser Admin</string>
     <string name="BotonSoyAdmin">Soy Admin</string>
-    <string name="textoBienvenida">Hola, Bienvenido a reservation</string>
+    <string name="textoBienvenida">Hola, Bienvenido a Reservation</string>
     <string name="textoQuieroAdmin">Hola, Quieres usar nuestra app como administrador?</string>
     <string name="textoUsuario">Usuario</string>
     <string name="textoContraseña">Contraseña</string>

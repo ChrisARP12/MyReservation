@@ -18,7 +18,7 @@ public class PrincipalView extends AppCompatActivity {
         setContentView(R.layout.activity_vista_principal);
         // Obtenga el intent que se inicio en MainActivity y extraiga la cadena
         Intent intent = getIntent();
-        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        String message = intent.getStringExtra("Dato");
 
         //Traemos los elementos del layout
         et_prueba = (TextView) findViewById(R.id.txt_ver);

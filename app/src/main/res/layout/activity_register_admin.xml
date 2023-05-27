@@ -47,11 +47,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/txt_usuario"
         app:layout_constraintVertical_bias="0.002">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txt_contrasena"
+            android:id="@+id/txt_edit_contrasena"
             android:layout_width="match_parent"
             android:layout_height="92dp"
             android:hint="@string/textoContraseña" />
@@ -73,7 +73,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/txt_usuario"
         app:layout_constraintVertical_bias="0.306">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -84,7 +84,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
+        android:id="@+id/txt_usuario"
         style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
         android:layout_width="404dp"
         android:layout_height="102dp"
@@ -102,7 +102,7 @@
 
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txt_usuario"
+            android:id="@+id/txt_edit_usuario"
             android:layout_width="match_parent"
             android:layout_height="92dp"
             android:hint="@string/textoUsuario" />
