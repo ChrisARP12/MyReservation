@@ -32,7 +32,7 @@
         app:layout_constraintVertical_bias="0.153" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout2"
+        android:id="@+id/txt_contrasena_edit"
         style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
         android:layout_width="404dp"
         android:layout_height="102dp"
@@ -58,7 +58,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout3"
+        android:id="@+id/txt_confirmar"
         style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
         android:layout_width="404dp"
         android:layout_height="102dp"

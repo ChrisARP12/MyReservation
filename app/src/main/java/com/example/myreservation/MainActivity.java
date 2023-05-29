@@ -33,19 +33,9 @@ public class MainActivity extends AppCompatActivity {
         btn_soyAdmin = findViewById(R.id.btn_quieroAdmin);
         et_usuario =  findViewById(R.id.txt_usuario);
         et_contrasena = findViewById(R.id.txt_contrasena);
-
-
-
+        //Recuperamos usuario usado con anterioridad
         recuperar();
-        /*if (getIntent().getStringExtra("correo") != null) {
-            String correo = getIntent().getStringExtra("correo");
-            String contrasenia = getIntent().getStringExtra("contrasena");
-
-            et_usuario.setText(correo);
-            et_contrasena.setText(contrasenia);
-            guardar();
-        }*/
-
+        //Acciones del boton ingresar
         btn_ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
 
                 String usuario  = et_usuario.getEditText().getText().toString();
                 String contraseña  = et_contrasena.getEditText().getText().toString();
+
+                //Guardamos el usuario con Shared Preference
                 guardar();
 
                 //Verificar campos vacios asi como el usuario y la contraseña
@@ -105,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
     public int buscar(){
         String user  = et_usuario.getEditText().getText().toString();
         String cont  = et_contrasena.getEditText().getText().toString();
-        con = new ConexionSQLiteHelper(getApplicationContext(),"bd_usuarios",null,1);
+        con = new ConexionSQLiteHelper(getApplicationContext(),"bd",null,1);
         SQLiteDatabase bd = con.getWritableDatabase();
 
         Cursor file = bd.rawQuery("SELECT "+ Utilidades.CAMPO_ID+" FROM "+Utilidades.TABLA_USUARIO+" WHERE "+Utilidades.CAMPO_USUARIO+" = '"+user+"' AND "+Utilidades.CAMPO_CONTRASENA+"='"+cont+"'",null);

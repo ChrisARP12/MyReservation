@@ -68,8 +68,7 @@
                 app:boxBackgroundMode="outline"
                 app:boxCornerRadiusBottomStart="10dp"
                 app:boxCornerRadiusTopEnd="10dp"
-                app:endIconMode="clear_text"
-                app:errorEnabled="false">
+                app:endIconMode="clear_text">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
