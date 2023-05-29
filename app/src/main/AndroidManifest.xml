@@ -13,6 +13,18 @@
         android:theme="@style/Theme.MyReservation"
         tools:targetApi="31">
         <activity
+            android:name=".AdminAgregarMesa"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarReservaUser"
+            android:exported="false" />
+        <activity
+            android:name=".ReservasAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".ReservaUser"
+            android:exported="false" />
+        <activity
             android:name=".VistaAdmin"
             android:exported="false" />
         <activity

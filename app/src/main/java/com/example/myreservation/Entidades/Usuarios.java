@@ -1,6 +1,13 @@
 package com.example.myreservation.Entidades;
 
-public class Usuarios {
+import android.os.Parcelable;
+
+import androidx.annotation.NonNull;
+
+import java.util.ArrayList;
+import java.util.function.IntFunction;
+
+public class Usuarios extends ArrayList<Parcelable> {
     private Integer id;
     private String nombre;
     private String usuario;
@@ -14,6 +21,7 @@ public class Usuarios {
         this.correo = correo;
         this.contraseña = contraseña;
     }
+    public Usuarios(){}
 
     public Integer getId() {
         return id;
@@ -54,4 +62,5 @@ public class Usuarios {
     public void setContraseña(String contraseña) {
         this.contraseña = contraseña;
     }
+
 }

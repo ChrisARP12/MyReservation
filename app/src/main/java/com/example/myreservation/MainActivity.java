@@ -7,13 +7,11 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.myreservation.Entidades.Usuarios;
 import com.example.myreservation.Utilidades.Utilidades;
 import com.google.android.material.textfield.TextInputLayout;
 
@@ -32,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         btn_registrar = findViewById(R.id.btn_registrar);
         btn_soyAdmin = findViewById(R.id.btn_quieroAdmin);
         et_usuario =  findViewById(R.id.txt_usuario);
-        et_contrasena = findViewById(R.id.txt_contrasena);
+        et_contrasena = findViewById(R.id.txt_precio);
         //Recuperamos usuario usado con anterioridad
         recuperar();
         //Acciones del boton ingresar

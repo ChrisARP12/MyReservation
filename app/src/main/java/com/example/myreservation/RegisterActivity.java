@@ -31,10 +31,10 @@ public class RegisterActivity extends AppCompatActivity {
         //Traemos los elementos de nuestra vista.
         img_regresar = findViewById(R.id.btn_regresar);
         btn_registrarse = findViewById(R.id.btn_registrar);
-        et_nombre = findViewById(R.id.txt_nombre);
-        et_usuario = findViewById(R.id.txt_edit_usuario);
-        et_correo = findViewById(R.id.txt_correo);
-        et_contrasena= findViewById(R.id.txt_contrasena);
+        et_nombre = findViewById(R.id.txt_nombre_mesa);
+        et_usuario = findViewById(R.id.txt_capacidad);
+        et_correo = findViewById(R.id.txt_descripcion);
+        et_contrasena= findViewById(R.id.txt_precio);
         et_confirmaContrasena = findViewById(R.id.txt_fill_confirmarContrasena);
 
 

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre de la mesa:"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mesa Antigua"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha:"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12/05/2023"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hora de inicio:"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textHoraInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11:45 AM"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hora de fin:"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textHoraFin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="02:30 PM"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/design_default_color_on_primary"
+            android:layout_below="@+id/idImagen"
+            android:layout_marginTop="11dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageFlecha"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/flech" />
+
+</RelativeLayout>

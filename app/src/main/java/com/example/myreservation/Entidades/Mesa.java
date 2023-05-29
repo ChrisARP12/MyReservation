@@ -18,6 +18,7 @@ public class Mesa {
         this.precio = precio;
         this.disponibilidad = disponibilidad;
     }
+    public Mesa(){}
 
     public Integer getId() {
         return id;

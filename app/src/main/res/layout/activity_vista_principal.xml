@@ -10,9 +10,57 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Prueba"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.13"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.087" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMesa"
+        android:layout_width="358dp"
+        android:layout_height="406dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.443" />
+
+    <ImageView
+        android:id="@+id/btn_reserva"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_agregarReserva"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerMesa"
+        app:layout_constraintVertical_bias="0.414"
+        app:srcCompat="@drawable/ic_reservas" />
+
+    <ImageView
+        android:id="@+id/btn_agregarReserva"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_salir"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerMesa"
+        app:layout_constraintVertical_bias="0.978"
+        app:srcCompat="@drawable/ic_agregar" />
+
+    <ImageView
+        android:id="@+id/btn_salir"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerMesa"
+        app:layout_constraintVertical_bias="0.414"
+        app:srcCompat="@drawable/ic_exit" />
 </androidx.constraintlayout.widget.ConstraintLayout>

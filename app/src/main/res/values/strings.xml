@@ -10,10 +10,24 @@
     <string name="textoContraseña">Contraseña</string>
     <string name="textoCofirmarContraseña">Vuelva a introducir su contraseña</string>
     <string name="BotonRegresar">Volver</string>
-    <string name="Prueba">Hola como estas</string>
+    <string name="Prueba">Hola Bienvenido</string>
     <string name="textoNombre">Nombre</string>
     <string name="textoApellido">Apellido</string>
     <string name="textoCorreo">Correo</string>
     <string name="textoRegistro">Hola, registrate para poder acceder</string>
     <string name="textoVerificar">Verificar Contraseña</string>
+    <string name="textoAdmin">Aquí podras modificar a tu gusto</string>
+    <string name="textotusReservas">Tus Reservas</string>
+    <string name="textoReservas">Tienes estas Reservaciones</string>
+    <string name="textoAgregarReservaUsuario">Agrega una nueva reservación</string>
+    <string name="textoAgregarMesaAdmin">Agrega una nueva mesa</string>
+    <string name="botonGuardar">Guardar</string>
+    <string name="textoFecha">Ingresa una fecha</string>
+    <string name="textoHoraInicio">Ingresa Hora de Inicio</string>
+    <string name="textoHoraFin">Ingresa Hora de Finalización</string>
+    <string name="textoSeleccion">Seleccióna una mesa</string>
+    <string name="textoNombreMesa">Nombre de la mesa</string>
+    <string name="textoCapacidad">Capacidad de personas</string>
+    <string name="textoDescripcion">Descripcion de la mesa</string>
+    <string name="textoPrecio">Precio de la mesa</string>
 </resources>

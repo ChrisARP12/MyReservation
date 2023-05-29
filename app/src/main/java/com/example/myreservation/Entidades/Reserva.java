@@ -3,13 +3,13 @@ package com.example.myreservation.Entidades;
 public class Reserva {
     private Integer id;
     private String idUser;
-    private Integer idAdmin;
+    private String idAdmin;
     private String nombreMesa;
     private String fecha;
     private String inicio;
     private String fin;
 
-    public Reserva(Integer id, String idUser, Integer idAdmin, String nombreMesa, String fecha, String inicio, String fin) {
+    public Reserva(Integer id, String idUser, String idAdmin, String nombreMesa, String fecha, String inicio, String fin) {
         this.id = id;
         this.idUser = idUser;
         this.idAdmin = idAdmin;
@@ -17,6 +17,9 @@ public class Reserva {
         this.fecha = fecha;
         this.inicio = inicio;
         this.fin = fin;
+    }
+
+    public Reserva() {
     }
 
     public Integer getId() {
@@ -35,11 +38,11 @@ public class Reserva {
         this.idUser = idUser;
     }
 
-    public Integer getIdAdmin() {
+    public String getIdAdmin() {
         return idAdmin;
     }
 
-    public void setIdAdmin(Integer idAdmin) {
+    public void setIdAdmin(String idAdmin) {
         this.idAdmin = idAdmin;
     }
 

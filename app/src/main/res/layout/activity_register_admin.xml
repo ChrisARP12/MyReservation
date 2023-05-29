@@ -102,7 +102,7 @@
 
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txt_edit_usuario"
+            android:id="@+id/txt_capacidad"
             android:layout_width="match_parent"
             android:layout_height="92dp"
             android:hint="@string/textoUsuario" />
